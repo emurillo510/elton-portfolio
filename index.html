@@ -37,22 +37,22 @@
 
 		/* default navigation styling*/
 
-			  #nav-header h1{
-			    font-family: Georgia;
-			    font-size: 22px;
-	  		  }
+			#nav-header h1{
+				font-family: Georgia;
+				font-size: 20px;
+	  		}
 
-			  #nav{
-			  	height: 5px;
-			  	margin: 0px 15px;
+			#nav{
+				height: 5px;
+				margin: 0px 15px;
 			    background-color: #fff;
 			    border-style: solid;
 			    border-radius: 5px;
-			  }
+			}
 
-			  #nav-header{
-			  	padding: 15px;
-			  }
+			#nav-header{
+				padding: 15px;
+			}
 
 			section#nav{
 				padding-bottom: 60px;
@@ -109,6 +109,10 @@
 		  	margin-right: 10%;
 		  }
 
+		  #container svg#icon-cool{
+		 	margin-left: -25px;
+		  }
+
 		  /* home styling */
 		  #home{
 		  	padding-bottom: 300px;
@@ -117,6 +121,31 @@
 		  /* about styling */
 		  #about{
 		  	padding-bottom: 5px;
+		  }
+
+		  /* styles html5 point under about section 'JavaScript and HTML' */
+		  svg#icon-html52 text#html5{
+		  	font-size: 11px;
+		  }
+
+		  /* styles ruby on rails point under about section 'Ruby on Rails' */
+		  svg#icon-diamond text#rubyonrails{
+		  	font-size: 11px;
+		  }
+
+		  /* styles house point under about section 'Bay Area Native' */
+		  svg#icon-home text#house{
+		  	font-size: 11px;
+		  }
+
+		  /* styles academic point under about section 'San Jose State Alumni' */
+		  svg#icon-study text#sjsu-alumni{
+		  	font-size: 11px;
+		  }
+
+		  /* styles academic point under about section 'San Jose State Alumni' */
+		  svg#icon-dribbble text#basketball{
+		  	font-size: 11px;
 		  }
 
 		  /* portfolio styling */
@@ -129,6 +158,11 @@
 		  /* contact styling */
 		  #contact{
 		  	padding-bottom: 100px;
+		  }
+
+		  /* styles envelope text 'elton.murillo@yahoo.com' */
+		  svg#icon-envelop text#envelop{
+		  	font-size: 11px
 		  }
 
 		 a > svg.icon{
@@ -490,7 +524,7 @@
 
   	<section id="home">
 	    <center>
-	      <svg class="icon icon-cool2">
+	      <svg id="icon-cool" class="icon icon-cool2">
 	        <use xlink:href="#icon-cool2"></use>
 	        <symbol id="icon-cool2" viewBox="0 0 1024 1024">
 	          <title>cool2</title>
@@ -503,12 +537,12 @@
 
     <section id="about">
       <h2>ABOUT</h2>
-      <svg class="icon icon-html52"><use xlink:href="#icon-html52"></use>
+      <svg id="icon-html52" class="icon icon-html52"><use xlink:href="#icon-html52"></use>
         <symbol id="icon-html52" viewBox="0 0 4096 4096">
           <title>html52</title>
           <path class="path1" d="M60.538 0l82.144 921.63 368.756 102.37 369.724-102.524 82.3-921.476h-902.924zM810.762 862.824l-297.226 82.376v0.466l-0.776-0.234-0.782 0.234v-0.466l-297.222-82.376-70.242-787.486h736.496l-70.248 787.486zM650.754 530.204l-13.070 146.552-126.21 34.070-125.862-33.916-8.050-90.234h-113.49l15.83 177.512 232.076 64.176 231.342-64.176 31.040-347.012h-411.966l-10.302-115.748h432.534l10.112-113.026h-566.218l30.498 341.802z"></path>
         </symbol>
-        <text x="125" y="25" font-family="sans-serif" font-size="14px">JavaScript and HTML
+        <text id="html5" x="125" y="25" font-family="sans-serif" font-size="14px">JavaScript and HTML
         </text>
         <center>
           <p class="description">JavaScript is one of my favorite languages to write. Coming from a Java background, I find that working on JavaScript projects is more liberating and expressive than Java. Lately, I have been learning many modern frameworks and libraries for JavaScript such as Ember.JS and Backbone.JS + Marionette; two extremely great technologies for building applications.
@@ -519,12 +553,12 @@
       
 
 
-      <svg class="icon icon-diamond"><use xlink:href="#icon-diamond"></use>
+      <svg id="icon-diamond" class="icon icon-diamond"><use xlink:href="#icon-diamond"></use>
         <symbol id="icon-diamond" viewBox="0 0 4096 4096">
           <title>diamond</title>
           <path class="path1" d="M1005.248 309.664l-162.56-162.592c-12-12-28.32-18.752-45.248-18.752h-570.848c-16.96 0-33.248 6.752-45.248 18.752l-162.56 162.592c-12.576 12.544-18.848 29.088-18.784 45.664 0.096 15.040 5.472 30.048 16.192 42.112l447.968 477.056c12.16 13.696 29.568 21.504 47.84 21.504s35.68-7.808 47.808-21.504l448-477.056c10.944-12.32 16.32-27.744 16.192-43.136-0.128-16.192-6.432-32.32-18.752-44.64zM583.008 352.32h-142.048l71.040-59.168 71.008 59.168zM537.024 272.32l87.424-72.896 64.576 64.576-81.024 67.488-70.976-59.168zM416 331.488l-81.024-67.488 64.576-64.576 87.456 72.896-71.008 59.168zM591.68 384.32l-79.68 398.496-79.68-398.496h159.36zM624.32 384.32h156.992l-235.488 392.608 78.496-392.608zM632.928 352.32l78.816-65.632 65.632 65.632h-144.448zM662.624 192.32h112.384l-61.312 51.104-51.072-51.104zM512 251.52l-71.040-59.2h142.016l-70.976 59.2zM310.272 243.424l-61.312-51.104h112.416l-51.104 51.104zM312.256 286.688l78.784 65.632h-144.416l65.632-65.632zM399.68 384.32l78.496 392.608-235.52-392.608h157.024zM406.528 719.616l-314.88-335.296h113.728l201.152 335.296zM818.624 384.32h113.76l-314.944 335.36 201.184-335.36zM822.624 352.32l-86.176-86.176 73.504-61.28 147.424 147.456h-134.752zM213.952 204.8l73.632 61.344-86.208 86.176h-137.184l149.76-147.52z"></path>
         </symbol>
-        <text x="125" y="25" font-family="sans-serif" font-size="14px">Ruby on Rails
+        <text id="rubyonrails" x="125" y="25" font-family="sans-serif" font-size="14px">Ruby on Rails
         </text>
         <center>
           <p class="description">Ruby on Rails is my first general-purpose language outside of Java. I started learning it due to starting Coppis on Ruby on Rails. What makes Ruby great is that it is truly more object-oriented than Java and it also has a more human like syntax due to how it handles loose typing. I try to use Ruby now more than Java as my go to language. I am also aim to learn Python.
@@ -532,24 +566,24 @@
         </center>
       </svg>
 
-      <svg class="icon icon-home"><use xlink:href="#icon-home"></use>
+      <svg id="icon-home" class="icon icon-home"><use xlink:href="#icon-home"></use>
         <symbol id="icon-home" viewBox="0 0 4096 4096">
           <title>home</title>
           <path class="path1" d="M1024 590.444l-512-397.426-512 397.428v-162.038l512-397.426 512 397.428zM896 576v384h-256v-256h-256v256h-256v-384l384-288z"></path>
         </symbol>
-        <text x="125" y="25" font-family="sans-serif" font-size="14px">Bay Area Native</text>
+        <text id="house" x="125" y="25" font-family="sans-serif" font-size="14px">Bay Area Native</text>
         <center>
           <p class="description">A 90's baby and a Bay Area native. Born in the humble and diverse neighborhood of Ingleside district in San Francisco. Moved to the East Bay in the quiet city of San Leandro and have been living here ever since.
           </p>
         </center>
       </svg>
 
-      <svg class="icon icon-study"><use xlink:href="#icon-study"></use>
+      <svg id="icon-study" class="icon icon-study"><use xlink:href="#icon-study"></use>
         <symbol id="icon-study" viewBox="0 0 4096 4096">
         <title>study</title>
         <path class="path1" d="M1024 256c0-44.992-30.624-83.456-74.432-93.568l-416.416-96.096c-6.976-1.568-14.080-2.336-21.152-2.336s-14.176 0.768-21.6 2.432l-415.968 96c-43.84 10.112-74.432 48.576-74.432 93.568s30.624 83.456 74.4 93.568l85.6 19.744v270.688c0 84.928 97.216 160 352 160s352-75.072 352-160v-270.688l85.568-19.744c43.808-10.112 74.432-48.576 74.432-93.568zM800 640c0 35.36-96 96-288 96s-288-60.64-288-96v-255.904l266.816 61.568c6.976 1.568 14.112 2.336 21.184 2.336s14.208-0.768 21.568-2.432l266.432-61.472v255.904zM519.2 383.2c-2.4 0.512-4.8 0.8-7.2 0.8s-4.832-0.288-7.2-0.8l-416-96c-14.528-3.36-24.8-16.288-24.8-31.2s10.272-27.84 24.8-31.2l416-96c2.368-0.512 4.768-0.8 7.2-0.8s4.832 0.288 7.2 0.8l416 96c14.496 3.36 24.8 16.288 24.8 31.2s-10.304 27.84-24.8 31.2l-416 96zM928 416c0-17.696 14.304-32 32-32 17.664 0 32 14.304 32 32v288c0 17.696-14.336 32-32 32-17.696 0-32-14.304-32-32v-288zM960 768c35.328 0 64 92.672 64 128s-28.672 64-64 64c-35.36 0-64-28.672-64-64s28.64-128 64-128z"></path>
       </symbol>
-      <text x="125" y="25" font-family="sans-serif" font-size="14px">San Jose State Alumni</text>
+      <text id="sjsu-alumni" x="125" y="25" font-family="sans-serif" font-size="14px">San Jose State Alumni</text>
       <center>
           <p class="description">I attended San Jose State University at the end of 2008 with a major in Computer Science. Here, I made great friendships in where we battled through tough times and had a memorable journey along the way in getting our degree. Also, during this time period we experienced a rapidly changing industry. It was a time around freshmen year the first iPhone came out that made an impact on the whole world. Android was still coming into the market and JavaScript frameworks such as Backbone, Angular and Ember did not exist. It was a great and exciting time period as a programmer and a college student and I am glad to have experienced the rapid change.
           </p>
@@ -559,12 +593,12 @@
 
 
     
-      <svg class="icon icon-dribbble"><use xlink:href="#icon-dribbble"></use>
+      <svg id="icon-dribbble" class="icon icon-dribbble"><use xlink:href="#icon-dribbble"></use>
         <symbol id="icon-dribbble" viewBox="0 0 4096 4096">
           <title>dribbble</title>
           <path class="path1" d="M512.002 1024c-282.32 0-512.002-229.682-512.002-512s229.682-512 512.002-512c282.322 0 511.998 229.682 511.998 512s-229.676 512-511.998 512zM943.798 582.086c-14.962-4.72-135.364-40.632-272.41-18.698 57.204 157.186 80.478 285.208 84.958 311.808 98.114-66.336 167.958-171.426 187.452-293.11zM682.832 915.238c-6.506-38.37-31.898-172.090-93.298-331.64-0.96 0.328-1.922 0.64-2.88 0.972-246.67 85.958-335.216 257.016-343.086 273.104 74.15 57.824 167.336 92.32 268.436 92.32 60.58 0 118.318-12.39 170.828-34.756zM187.098 805.078c9.908-16.96 129.93-215.684 355.476-288.594 5.704-1.84 11.448-3.57 17.236-5.2-10.98-24.844-22.94-49.714-35.456-74.216-218.398 65.36-430.324 62.63-449.46 62.236-0.132 4.442-0.222 8.89-0.222 13.366 0 112.32 42.58 214.874 112.426 292.408zM83.912 423.096c19.558 0.26 199.736 1.042 404.302-53.282-72.46-128.812-150.612-237.11-162.142-252.92-122.348 57.708-213.802 170.496-242.16 306.202zM409.518 87.5c12.088 16.184 91.518 124.348 163.18 256.014 155.508-58.284 221.34-146.77 229.208-157.974-77.23-68.518-178.782-110.2-289.902-110.2-35.29 0-69.6 4.232-102.486 12.16zM850.522 236.112c-9.216 12.474-82.504 106.418-244.202 172.434 10.178 20.832 19.934 42.018 29.016 63.344 3.216 7.56 6.354 15.084 9.418 22.57 145.518-18.298 290.104 11.028 304.526 14.078-0.968-103.224-37.85-198.010-98.758-272.426z"></path>
         </symbol>
-        <text x="125" y="25" font-family="sans-serif" font-size="14px">Basketball Player</text>
+        <text id="basketball" x="125" y="25" font-family="sans-serif" font-size="14px">Basketball Player</text>
         <center>
           <p class="description">Basketball is my first love. Started playing basketball in the 3rd grade and I loved it so much. The sport itself teaches you a lot about how to become successful outside of sports and as a person. Skills such as self-discipline, working with a team, or improving personal skill. With these traits, you can translate them to different context such as school or programming and be successful in them.
           </p>
@@ -576,24 +610,48 @@
     <section id="portfolio">
       <h2>PORTFOLIO</h2>
 
-      <svg class="icon icon-bulb"><use xlink:href="#icon-bulb"></use>
+      <svg id="portfolio-coppisv2" class="icon icon-bulb"><use xlink:href="#icon-bulb"></use>
         <symbol id="icon-bulb" viewBox="0 0 4096 4096">
           <title>bulb</title>
           <path class="path1" d="M512 0c-194.432 0-352 157.568-352 352 0 128.992 118.016 265.696 160.992 385.76 64.096 179.040 56.992 286.24 191.008 286.24 136 0 126.88-106.688 191.008-285.504 43.104-120.32 160.992-258.496 160.992-386.496 0-194.432-157.632-352-352-352zM594.944 869.632l-158.656 19.808c-5.664-16.384-11.744-35.552-19.136-60.576-0.096-0.32-0.224-0.672-0.288-0.992l198.016-24.736c-2.816 9.44-5.824 19.36-8.448 28.256-4.192 14.368-7.936 26.848-11.488 38.24zM407.552 797.056c-5.824-19.264-12.384-39.552-19.68-61.056h248.512c-3.936 11.488-7.872 23.008-11.264 33.888l-217.568 27.168zM512 960c-32.416 0-47.328-3.744-63.904-40l135.616-16.992c-19.648 52.928-33.952 56.992-71.712 56.992zM661.504 672h-298.656c-15.936-34.56-35.072-69.12-53.952-102.944-41.76-74.72-84.896-152-84.896-217.056 0-158.816 129.184-288 288-288s288 129.184 288 288c0 64.576-43.2 142.272-84.992 217.44-18.688 33.696-37.696 68.192-53.504 102.56zM512 160c8.8 0 16 7.168 16 16s-7.168 16-16 16c-88.224 0-160 71.776-160 160 0 8.832-7.168 16-16 16s-16-7.168-16-16c0-105.888 86.112-192 192-192z"></path>
         </symbol>
-        <text x="125" y="25" font-family="sans-serif" font-size="14px">Coppis</text>
+        <text x="125" y="25" font-family="sans-serif" font-size="14px">Coppis v2.0</text>
         <center>
           <p class="description">Coppis was my first web application using a modern framework; Ruby on Rails. Coppis is a fashion platform where entrepreneurs can post trending urban fashion. This platform allows the community to see up and trending clothing from local businesses. Think instagram for local urban clothing. This project allowed me to learn many various technologies and techniques such as MVC. We touched many RubyGems such as Devise, Paperclip, Rspec, and minitest just to name a few. Also, it forced us to learn a new language (Ruby). Ever since Ruby has become one of my commonly used languages on a day-to-day basis. We learned about Object-Relational Mapping and also learned how to configure and deploy servers using Nginx and Postgres. Even though many people are transitioning to a Node.js backend; Ruby has a great community and both Ruby and Rails are continually being optimized. I am proud in using Ruby on Rails and I am proud to have been apart of Coppis.
           </p>
         </center>
       </svg>
 
-      <svg class="icon icon-bulb"><use xlink:href="#icon-bulb"></use>
+      <svg id="portfolio-coppisv1" class="icon icon-bulb"><use xlink:href="#icon-bulb"></use>
         <symbol id="icon-bulb" viewBox="0 0 4096 4096">
           <title>bulb</title>
           <path class="path1" d="M512 0c-194.432 0-352 157.568-352 352 0 128.992 118.016 265.696 160.992 385.76 64.096 179.040 56.992 286.24 191.008 286.24 136 0 126.88-106.688 191.008-285.504 43.104-120.32 160.992-258.496 160.992-386.496 0-194.432-157.632-352-352-352zM594.944 869.632l-158.656 19.808c-5.664-16.384-11.744-35.552-19.136-60.576-0.096-0.32-0.224-0.672-0.288-0.992l198.016-24.736c-2.816 9.44-5.824 19.36-8.448 28.256-4.192 14.368-7.936 26.848-11.488 38.24zM407.552 797.056c-5.824-19.264-12.384-39.552-19.68-61.056h248.512c-3.936 11.488-7.872 23.008-11.264 33.888l-217.568 27.168zM512 960c-32.416 0-47.328-3.744-63.904-40l135.616-16.992c-19.648 52.928-33.952 56.992-71.712 56.992zM661.504 672h-298.656c-15.936-34.56-35.072-69.12-53.952-102.944-41.76-74.72-84.896-152-84.896-217.056 0-158.816 129.184-288 288-288s288 129.184 288 288c0 64.576-43.2 142.272-84.992 217.44-18.688 33.696-37.696 68.192-53.504 102.56zM512 160c8.8 0 16 7.168 16 16s-7.168 16-16 16c-88.224 0-160 71.776-160 160 0 8.832-7.168 16-16 16s-16-7.168-16-16c0-105.888 86.112-192 192-192z"></path>
         </symbol>
-        <text x="125" y="25" font-family="sans-serif" font-size="14px">Bart</text>
+        <text x="125" y="25" font-family="sans-serif" font-size="14px">Coppis v1.0</text>
+        <center>
+          <p class="description">This website was the first iteration of our minimal viable product. We entered the Winter '14 Ycombinator batch with this demo. It was also the first codebase used while we were learning the Rails Framework. Resources such as books from Michael Hartl, Rails 4 in Action, RailsCast, One month Rails, and many more were used to create this product. Along with many reputable Gems such as devise and paperclip.
+          </p>
+        </center>
+      </svg>
+
+    <svg class="icon icon-football"><use xlink:href="#icon-football"></use>
+	    <symbol id="icon-football" viewBox="0 0 4096 4096">
+		<title>football</title>
+		<path class="path1" d="M713.696 844.576c-267.808 154.624-570.88 131.104-676.928-52.576-106.016-183.68 25.12-457.952 292.96-612.576s570.88-131.136 676.96 52.576c106.048 183.648-25.12 457.92-292.992 612.576zM80.32 551.424c-25.056 75.392-23.392 149.184 11.68 209.984 35.104 60.768 98.144 99.104 176 115.072l-187.68-325.056zM654.688 143.072c-92.8 6.080-195.168 36.672-293.152 93.216-99.68 57.6-178.464 132.544-230.112 211.392l252 436.48c94.112-5.312 198.4-36.032 298.144-93.6 97.952-56.576 175.616-129.952 227.328-207.296l-254.208-440.192zM961.824 478.176c26.048-76.384 24.8-151.232-10.688-212.768-35.552-61.568-99.744-100.032-178.944-115.648l189.632 328.416zM550.56 601.952l-25.952 15.008-31.040-53.696-0.128 0.064-29.312 16.928 31.008 53.696-25.984 15.008-31.008-53.696-0.128 0.064-29.312 16.928 31.008 53.696-25.984 15.008-31.008-53.728-0.128 0.096-55.424 32-16-27.712 55.552-32.096-32.384-56.096 25.984-15.008 32.416 56.096 29.44-16.992-32.416-56.16 25.984-14.976 32.416 56.096 29.44-16.992-32.384-56.128 25.984-14.976 32.416 56.096 29.44-16.992-32.384-56.128 25.984-14.976 32.384 56.096 29.44-16.992-32.384-56.096 25.952-15.008 32.448 56.096 29.44-16.992-32.448-56.128 25.984-14.976 32.384 56.096 57.888-33.376 16 27.712-57.888 33.408 31.008 53.696-25.952 15.008-31.008-53.696-29.44 16.992 31.008 53.696-25.984 15.008-31.008-53.696-0.128 0.064-29.312 16.928 31.008 53.696-25.984 15.008-31.008-53.696-0.128 0.064-29.312 16.928 30.944 53.728z"></path>
+		</symbol>
+		<text x="125" y="25" font-family="sans-serif" font-size="14px">Askin' Madden v0.5</text>
+        <center>
+          <p class="description">I wanted to make an application that can help with helping my Fantasy Football team succeed in winning a championship! This project is 100 percent non-profit and completely for educational purposes. This fantasy football research project is in its early stages and consist of three parts. The first part of this exciting project is data aggregation. I am using a popular XML parser in python called Beautiful Soup along with CURL command to pull and parse football data from various sources. The second part is building the front-end of the research portal. This project is going to be written in Backbone + Marionette and a JavaScript data visualization library. Lastly, the back-end will use Ruby on Rails. Ruby on Rails has a great community and its codebase is continually being optimized for speed with each iteration. Node would of been great backend as well, but Ruby and its establish Gems make it really easy to be productive.
+          </p>
+        </center>
+	</svg>
+
+      <svg id="portfolio-bart" class="icon icon-bulb"><use xlink:href="#icon-bulb"></use>
+        <symbol id="icon-bulb" viewBox="0 0 4096 4096">
+          <title>bulb</title>
+          <path class="path1" d="M512 0c-194.432 0-352 157.568-352 352 0 128.992 118.016 265.696 160.992 385.76 64.096 179.040 56.992 286.24 191.008 286.24 136 0 126.88-106.688 191.008-285.504 43.104-120.32 160.992-258.496 160.992-386.496 0-194.432-157.632-352-352-352zM594.944 869.632l-158.656 19.808c-5.664-16.384-11.744-35.552-19.136-60.576-0.096-0.32-0.224-0.672-0.288-0.992l198.016-24.736c-2.816 9.44-5.824 19.36-8.448 28.256-4.192 14.368-7.936 26.848-11.488 38.24zM407.552 797.056c-5.824-19.264-12.384-39.552-19.68-61.056h248.512c-3.936 11.488-7.872 23.008-11.264 33.888l-217.568 27.168zM512 960c-32.416 0-47.328-3.744-63.904-40l135.616-16.992c-19.648 52.928-33.952 56.992-71.712 56.992zM661.504 672h-298.656c-15.936-34.56-35.072-69.12-53.952-102.944-41.76-74.72-84.896-152-84.896-217.056 0-158.816 129.184-288 288-288s288 129.184 288 288c0 64.576-43.2 142.272-84.992 217.44-18.688 33.696-37.696 68.192-53.504 102.56zM512 160c8.8 0 16 7.168 16 16s-7.168 16-16 16c-88.224 0-160 71.776-160 160 0 8.832-7.168 16-16 16s-16-7.168-16-16c0-105.888 86.112-192 192-192z"></path>
+        </symbol>
+        <text x="125" y="25" font-family="sans-serif" font-size="14px">Bart API v1.0</text>
         <center>
           <p class="description">I am currently writing my own Bart application for my daily commute. It will tell me when the next trains are coming. The application pulls from the part API which structures its data in XML. A Rails backend with a Bart API key pulls the data and sends it across the network via JSON. A Backbone Frontend picks up the data and renders its content. User data is stored in the browsers localStorage interface so data is persisted. This application allows me to get to work on time!
           </p>
@@ -607,12 +665,12 @@
       <h2>CONTACT</h2>
 
       <a href="mailto:elton.murilloi@yahoo.com?Subject=Greetings Elton!">
-      <svg class="icon icon-envelop"><use xlink:href="#icon-envelop"></use>
+      <svg id="icon-envelop" class="icon icon-envelop"><use xlink:href="#icon-envelop"></use>
         <symbol id="icon-envelop" viewBox="0 0 4096 4096">
           <title>envelop</title>
           <path class="path1" d="M928 128h-832c-52.8 0-96 43.2-96 96v640c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-640c0-52.8-43.2-96-96-96zM398.74 550.372l-270.74 210.892v-501.642l270.74 290.75zM176.38 256h671.24l-335.62 252-335.62-252zM409.288 561.698l102.712 110.302 102.71-110.302 210.554 270.302h-626.528l210.552-270.302zM625.26 550.372l270.74-290.75v501.642l-270.74-210.892z"></path>
         </symbol>
-        <text x="125" y="25" font-family="sans-serif" font-size="14px">elton.murillo@yahoo.com</text>
+        <text id="envelop" x="125" y="25" font-family="sans-serif" font-size="14px">elton.murillo@yahoo.com</text>
       </svg>
       </a>
 
@@ -705,6 +763,22 @@
 	      });
 
 	      /* Link Logic */
+
+	      /* portfolio links */
+	      $('#portfolio-coppisv2').click(function(){
+	      	console.log("coppis clicked redirect to website");
+	      	window.location.replace("http://www.coppis.co");
+	      });
+
+	      $('#portfolio-coppisv1').click(function(){
+	      	console.log("coppis clicked redirect to website");
+	      	window.location.replace("http://cproject.herokuapp.com");
+	      });
+
+	      $('#portfolio-bart').click(function(){
+	      	console.log("coppis clicked redirect to website");
+	      	window.location.replace("https://github.com/emurillo510/bart-tracker-backend");
+	      });
 
 	});
 </script>
